@@ -6,9 +6,9 @@
   vars_files:
   - course.yaml
   vars_prompt:
-    - name: NAME
-      prompt: what is your NAME?
-      private: true
+  - name: NAME
+    prompt: what is your NAME?
+    private: true
   tasks:
   - name: testing varibles preference
     vars:
