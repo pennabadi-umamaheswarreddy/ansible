@@ -1,14 +1,14 @@
 - name: Vars Preference
   hosts: local
   connection: local
-  vars:
-    NAME: from play level 
+  # vars:
+  #   NAME: from play level 
   # vars_files:
   # - course.yaml
-  vars_prompt:
-  - name: NAME
-    prompt: what is your NAME?
-    private: true
+  # vars_prompt:
+  # - name: NAME
+  #   prompt: what is your NAME?
+  #   private: true
   tasks:
   - name: testing varibles preference
     # vars:
@@ -19,3 +19,6 @@
 # 1. args or command line
 # 2. from task
 # 3. files
+# 4. from prompt
+# 5. Play level
+# 6. inventory
