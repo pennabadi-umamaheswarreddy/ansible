@@ -2,7 +2,7 @@
   hosts: local 
   connection: local 
   vars:
-    technologies: DevOps, Linux, Shell Ansible #string
+    technologies: DevOps, Linux, Shell, Ansible #string
   tasks:
   - name: default variable
     ansible.builtin.debug:
