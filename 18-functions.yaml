@@ -7,6 +7,11 @@
     tags:
       Application: payment
       Environment: dev
+    listTags :
+    - key: Application
+      value: payment 
+    - key: Environment
+      value: dev
   tasks:
   - name: default variable
     ansible.builtin.debug:
@@ -20,3 +25,7 @@
   - name: convert map to list 
     ansible.builtin.debug:
       msg: "Tags are: {{ tags | dict2items }}"
+
+  - name: convert list into map 
+    ansible.builtin.debug:
+      msg: "tag map: {{ listTags | item2dist }}"
